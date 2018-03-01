@@ -3,6 +3,20 @@
 # dependencies
 /node_modules
 
+modules
+
+# env
+.env*
+!.env.example
+!.env.*.*
+
+# Build styles
+src/**/*.css
+
+#sublime
+rubber-knife.sublime-workspace
+
+
 # testing
 /coverage
 

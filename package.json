@@ -1,6 +1,10 @@
 {
   "name": "rubber-knife",
   "version": "0.1.0",
+  "homepage": "rubberknife.ca",
+  "author": "Donald Geddes",
+  "bugs": "dev@rubberknife.ca",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
@@ -14,6 +18,8 @@
     "redux": "^3.7.2"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "yarn build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -26,7 +32,6 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-react": "^7.7.0",
     "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.2",
     "postcss": "^6.0.19",
     "stylelint": "^9.1.1",
     "stylelint-config-standard": "^18.1.0"
