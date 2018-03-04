@@ -7,18 +7,24 @@
 // Returns flex w/ alignment and direction
 @mixin flex-align($center: 'both') {
   @if $center == 'horizontal' {
-    display: 'flex';
-    justify-content: 'center';
+    display: flex;
+    justify-content: center;
   }
 
   @else if $center == 'vertical' {
-    display: 'flex';
-    align-items: 'center';
+    display: flex;
+    align-items: center;
   }
 
   @else if $center == 'both' {
-    display: 'flex';
-    align-items: 'center';
-    justify-content: 'center';
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+}
+
+// Resets styling for links
+@mixin link-reset() {
+  color: inherit;
+  text-decoration: unset;
 }
