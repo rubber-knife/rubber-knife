@@ -3,17 +3,19 @@
   'abstracts/functions',
   'abstracts/mixins';
 @import
+  'base/index',
   'base/reset',
   'base/typography';
 
 // import layout
 
+@import
+  'layout/header',
+  'layout/navigation';
+
 /*
-  @import
-    'layout/navigation',
-    'layout/grid',
-    'layout/header',
-    'layout/footer',
+  'layout/grid',
+  'layout/footer',
  */
 
 // import components

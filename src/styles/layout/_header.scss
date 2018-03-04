@@ -1,0 +1,102 @@
+// Humble header vars
+$humble-transition-duration: 300ms;
+
+.header__container {
+  @include flex-align('horizontal');
+
+  position: fixed;
+  width: 100%;
+
+  .header {
+    $header-margin-top: 0.5rem;
+
+    margin-top: $header-margin-top;
+    transition: $humble-transition-duration all;
+    width: 65%;
+
+    @media (max-width: 800px) {
+      width: 80%;
+    }
+
+    @media (max-width: 550px) {
+      width: 95%;
+    }
+  }
+}
+
+.header__top {
+  background: white;
+  border-bottom: 1px solid $silver;
+  display: flex;
+  height: calc(100px - 2rem);
+  transition: $humble-transition-duration height;
+
+  .header__logo {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    min-width: 225px;
+
+    .header__logo-image__container {
+      position: relative;
+      width: 100%;
+    }
+
+    .header__logo-image {
+      bottom: -2.5rem;
+      filter:
+        drop-shadow(10px 0 0 white)
+        drop-shadow(-10px 0 0 white);
+      position: absolute;
+      transform: translateY(0px);
+      transition: $humble-transition-duration transform;
+      width: 100%;
+    }
+  }
+}
+
+.header__bottom {
+  line-height: 1.75;
+
+  .header__title {
+    display: inline-block;
+    font-family: $font-family-logo;
+    font-size: 24px;
+    padding: 0 2vw;
+    transform: 0;
+    transition: $humble-transition-duration transform;
+  }
+}
+
+.header.header--humble {
+  margin-top: 0;
+  transition: $humble-transition-duration all;
+  width: 75%;
+
+  @media (max-width: 800px) {
+    width: 80%;
+  }
+
+  @media (max-width: 550px) {
+    width: 95%;
+  }
+
+  .header__top {
+    height: calc(100px - 4rem);
+    transition: $humble-transition-duration height;
+  }
+
+  .header__logo-image {
+    transform: translateY(-80px);
+    transition: $humble-transition-duration transform;
+  }
+
+  .header__title {
+    transform: translateY(-38px);
+    transition: $humble-transition-duration transform;
+  }
+
+  .nav__underline {
+    transition-delay: $humble-transition-duration * 1.5;
+  }
+}

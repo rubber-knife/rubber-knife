@@ -20,14 +20,19 @@ $media-lg: 1200px;
 // COLORS
 
 // Brand
-$poetry-colour: 'pink';
-$prose-colour: 'red';
-$va-colour: 'purple';
+$poetry-colour: #f464d5;
+$prose-colour: #ff1010;
+$va-colour: #794ffc;
+
+$gallery: hsl(0, 0%, 93%);
+$silver: hsl(0, 0%, 80%);
 
 /* ------------------------------------- */
 // FONTS
 
 $font-family-1: 'Roboto', sans-serif;
+$font-family-logo: 'Mukta Malar', sans-serif;
+
 $font-size-base: 16px;
 
 // Fonts: Sizes
