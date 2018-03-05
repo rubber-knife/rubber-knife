@@ -9,7 +9,7 @@ import ScrollY from 'utils/ScrollY'
 
 storiesOf('Header', module)
   .addDecorator(StoryRouter())
-  .add('default', () => (
+  .add('normal', () => (
     <Header>
       <Nav />
     </Header>
@@ -19,7 +19,7 @@ storiesOf('Header', module)
       <Nav />
     </Header>
   ))
-  .add('full', () => (
+  .add('responsive', () => (
     <div>
       <ScrollY>
         <Header>

@@ -6,6 +6,7 @@ $humble-transition-duration: 300ms;
 
   position: fixed;
   width: 100%;
+  z-index: 99;
 
   .header {
     $header-margin-top: 0.5rem;

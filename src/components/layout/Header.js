@@ -8,6 +8,7 @@ import titles from 'constants/titles'
 import logo from 'rk-logo.png'
 
 const Header = ({ children, scrollY }) => {
+  console.log(scrollY);
   const headerClasses = classnames(
     'header',
     { 'header--humble': scrollY > 70 ? true : undefined }
@@ -41,7 +42,11 @@ const Header = ({ children, scrollY }) => {
 
 Header.propTypes = {
   children: PropTypes.node.isRequired,
-  scrollY: PropTypes.number.isRequired
+  scrollY: PropTypes.number
+}
+
+Header.defaultProps = {
+  scrollY: 99
 }
 
 export default Header
